@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.teal-red.min.css" /> 
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="lib/css/font-awesome.min.css">
+      <link rel="stylesheet" href="lib/css/mdl-drawer-styling.css">      
+      <link rel="stylesheet" href="lib/css/immybox.css">
+      <style>
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+</style>
+   </head>
+<body>
+   <!-- The drawer is always open in large screens. The header is always shown,  even in small screens. -->
+   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+         <div class="mdl-layout__header-row">
+            <!-- Title -->
+            
+            <span class="mdl-layout-title">Main Title</span>
+         </div>
+         <div class="mdl-layout__header-row"></div>
+      </header>
+      <div class="mdl-layout__drawer">
+         <span class="mdl-layout-title">Drawer Title</span>
+    <div class="mdl-navigation">
+
+      <a class="mdl-navigation__link">A link</a>
+
+      <div class="mdl-collapse">
+        <a class="mdl-navigation__link mdl-collapse__button">
+          <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+          Some links
+        </a>
+        <div class="mdl-collapse__content-wrapper">
+          <div class="mdl-collapse__content   mdl-animation--default">
+            <a class="mdl-navigation__link">This</a>
+            <a class="mdl-navigation__link">That</a>
+            <a class="mdl-navigation__link">The other</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdl-collapse mdl-collapse--opened">
+        <a class="mdl-navigation__link mdl-collapse__button">
+          <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+          Default to opened
+        </a>
+        <div class="mdl-collapse__content-wrapper">
+          <div class="mdl-collapse__content mdl-animation--default">
+            <a class="mdl-navigation__link " href="length.html">Here</a>
+            <a class="mdl-navigation__link">There</a>
+          </div>
+        </div>
+      </div>
+
+      <a class="mdl-navigation__link">Ordinary link</a>
+
+      <div class="mdl-collapse">
+        <a class="mdl-navigation__link mdl-collapse__button">
+          <i class="material-icons mdl-collapse__icon mdl-animation--default">expand_more</i>
+          Other links
+        </a>
+        <div class="mdl-collapse__content-wrapper">
+          <div class="mdl-collapse__content mdl-animation--default">
+            <a class="mdl-navigation__link">One</a>
+            <a class="mdl-navigation__link">Two</a>
+            <a class="mdl-navigation__link">Three</a>
+            <a class="mdl-navigation__link">Four</a>
+                       
+                        
+          </div>
+        </div>
+      </div>
+
+      <a class="mdl-navigation__link">Just a link</a>
+
+    </div>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100 " >
+      	<div class="mdl-grid ">
+			<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-color--white mdl-shadow--16dp" style="text-align: center; justify-content:center;">
+				  <div class="mdl-cell mdl-cell--2-col 	mdl-cell--12-col-phone mdl-cell--middle mdl-textfield mdl-js-textfield ">
+				    <input class="mdl-textfield__input" pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type="number" id="value" placeholder="Value">
+				    <span class="mdl-textfield__error">Input is not a number!</span>
+				  </div>
+				  <div class="mdl-cell mdl-cell--3-col 	mdl-cell--12-col-phone mdl-cell--middle mdl-textfield mdl-js-textfield">
+				  <input class="mdl-textfield__input immybox immybox_witharrow" type="text" id="convert_from" placeholder="Select unit">
+				  </div>
+				  <div class="mdl-cell mdl-cell--1-col 	mdl-cell--12-col-phone mdl-cell--middle" style="text-align: center;color: rgb(0,150,136);">				  
+	 				   <i id="swap" class="fa fa-refresh fa-2x" aria-hidden="true"></i>
+				  </div>
+				  <div class="mdl-cell mdl-cell--3-col 	mdl-cell--12-col-phone mdl-cell--middle mdl-textfield mdl-js-textfield">
+				  <input class="mdl-textfield__input immybox immybox_witharrow" type="text" id="convert_to" placeholder="Select conversion unit">
+				  </div>
+				  <div class="mdl-cell mdl-cell--3-col 	mdl-cell--12-col-phone mdl-cell--middle mdl-textfield mdl-js-textfield disabled">				  
+				    <input class="mdl-textfield__input" type="text" id="result" placeholder="Result" readonly>
+				  </div>
+
+			</div>
+	    </div>
+	   <div id="details">
+	   <div  class="mdl-grid"  id="definition">
+	   		<div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phonesquare-card mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">H5</h2>
+			</div>
+			<div class="mdl-card__supporting-text">HTML5 is the next major
+				revision of the HTML standard superseding HTML 4.01, XHTML 1.0, and
+				XHTML 1.1. HTML5 is a standard for structuring and presenting
+				content on the World Wide Web.</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<a
+					class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Learn
+					HTML5</a>
+			</div>
+			<div class="mdl-card__menu">
+				<button
+					class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					<i class="material-icons">share</i>
+				</button>
+			</div>
+		</div>
+				<div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phonesquare-card mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">H5</h2>
+			</div>
+			<div class="mdl-card__supporting-text">HTML5 is the next major
+				revision of the HTML standard superseding HTML 4.01, XHTML 1.0, and
+				XHTML 1.1. HTML5 is a standard for structuring and presenting
+				content on the World Wide Web.</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<a
+					class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Learn
+					HTML5</a>
+			</div>
+			<div class="mdl-card__menu">
+				<button
+					class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					<i class="material-icons">share</i>
+				</button>
+			</div>
+		</div>
+				<div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-phonesquare-card mdl-card mdl-shadow--2dp">
+			<div class="mdl-card__title">
+				<h2 class="mdl-card__title-text">H5</h2>
+			</div>
+			<div class="mdl-card__supporting-text">HTML5 is the next major
+				revision of the HTML standard superseding HTML 4.01, XHTML 1.0, and
+				XHTML 1.1. HTML5 is a standard for structuring and presenting
+				content on the World Wide Web.</div>
+			<div class="mdl-card__actions mdl-card--border">
+				<a
+					class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Learn
+					HTML5</a>
+			</div>
+			<div class="mdl-card__menu">
+				<button
+					class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+					<i class="material-icons">share</i>
+				</button>
+			</div>
+		</div></div>
+
+	   </div>
+		</main>
+
+   </div>
+   
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+   <script type='text/javascript' src='lib/js/jquery.ba-hashchange.js'></script>
+     <script>
+    $(function(){
+      $('.mdl-collapse__content').each(function(){
+        var content = $(this);
+        content.css('margin-top', -content.height());
+      })
+
+      $(document.body).on('click', '.mdl-collapse__button', function(){
+        $(this).parent('.mdl-collapse').toggleClass('mdl-collapse--opened');
+      })
+    })
+  </script>
+   <script src="lib/js/jquery.immybox.js"></script>
+   <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>   
+   <script src="lib/js/script.js"></script>
+   <script src="lib/js/dynamicLoad.js"></script>
+</body>
+</html>
