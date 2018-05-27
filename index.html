@@ -68,7 +68,7 @@
       	<div class="mdl-grid ">
 			<div class="mdl-grid mdl-cell mdl-cell--12-col mdl-color--white mdl-shadow--16dp" style="text-align: center; justify-content:center;">
 				  <div class="mdl-cell mdl-cell--2-col 	mdl-cell--12-col-phone mdl-cell--middle mdl-textfield mdl-js-textfield ">
-				    <input class="mdl-textfield__input" pattern="/^[0-9]+(\.[0-9]{1,2})?$/" type="number" id="value" placeholder="Value">
+				    <input class="mdl-textfield__input" step="any" type="number" id="value" placeholder="Value">
 				    <span class="mdl-textfield__error">Input is not a number!</span>
 				  </div>
 				  <div class="mdl-cell mdl-cell--3-col 	mdl-cell--12-col-phone mdl-cell--middle mdl-textfield mdl-js-textfield">
@@ -128,26 +128,26 @@
                         </ul>
                     </div>
                 </div>
-                <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phonesquare-card mdl-card mdl-shadow--2dp">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">About</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <p>
-                            Anyconversion.com is a measurement unit conversion website. Unlike other websites on the net, where you have to select
-                            a category to find the unit you want to convert, anyconversion.com let's you type and search the unit saving time and confusion,
-                            while automatically loading the relevant result units.
-                        </p>
-                        <p>
-                            So, just start typing the unit you want to convert, enter a value, select the conversion unit and you are good to go.
-                        </p>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a id="tour_button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Tour</a>
-                    </div>
-                </div>
 			</div>
 		</div>
+      <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-phonesquare-card mdl-card mdl-shadow--16dp">
+          <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text">About</h2>
+          </div>
+          <div class="mdl-card__supporting-text">
+              <p>
+                  Anyconversion.com is a measurement unit conversion website. Unlike other websites on the net, where you have to select
+                  a category to find the unit you want to convert, anyconversion.com let's you type and search the unit saving time and confusion,
+                  while automatically loading the relevant result units.
+              </p>
+              <p>
+                  So, just start typing the unit you want to convert, enter a value, select the conversion unit and you are good to go.
+              </p>
+          </div>
+          <div class="mdl-card__actions mdl-card--border">
+              <a id="tour_button" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Tour</a>
+          </div>
+      </div>
 		</main>
 
    </div>
@@ -159,11 +159,11 @@
    <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
    <script src="lib/js/units.js"></script>
    <script src="lib/js/anyconversion.js"></script>
-   <script src="lib/js/dynamicLoad.js"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/kineticjs/5.2.0/kinetic.min.js"></script>
    <script src="lib/js/jquery.enjoyhint.js"></script>
    <script src="lib/js/enjoyhint.js"></script>
    <script src="lib/js/tour.js"></script>
+   <script src="lib/js/dynamicLoad.js"></script>
 	<script>
 		$(function() {
 			$('.mdl-collapse__content').each(function() {
